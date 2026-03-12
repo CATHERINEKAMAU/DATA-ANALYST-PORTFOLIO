@@ -219,19 +219,24 @@
     .f-logo { font-family:'Cormorant Garamond',serif; font-size:1.15rem; color:var(--gold); letter-spacing:0.12em; }
 
     /* RESPONSIVE */
-    @media(max-width:960px){
-      .nav-links{display:none;}
-      .hero{padding:8rem 6% 4rem;}
-      .hero-stats{display:none;}
-      .about-inner{grid-template-columns:1fr;gap:3rem;}
-      #about{padding:6rem 6%;}
-      #projects{padding:6rem 6%;}
-      .proj-card,.proj-card.flip{grid-template-columns:1fr;direction:ltr;}
-      .proj-card.flip>*{direction:ltr;}
-      #contact{padding:6rem 6%;}
-      .form-row{grid-template-columns:1fr;}
-      footer{padding:1.5rem 6%;flex-direction:column;text-align:center;}
-    }
+   @media(max-width:960px){
+  .nav-links{display:none;}
+  .hero{padding:8rem 6% 4rem;}
+  .hero-stats{display:none;}
+  .about-inner{grid-template-columns:1fr;gap:3rem;}
+  #about{padding:6rem 6%;}
+  #projects{padding:6rem 6%;}
+  .proj-card,.proj-card.flip{grid-template-columns:1fr;direction:ltr;}
+  .proj-card.flip>*{direction:ltr;}
+  #contact{padding:6rem 6%;}
+  .form-row{grid-template-columns:1fr;}
+  footer{padding:1.5rem 6%;flex-direction:column;text-align:center;}
+
+  /* ← ADD THESE: */
+  .btn-send{align-self:stretch;justify-content:center;}
+  .hero-cta{flex-direction:column;}
+  .btn-gold,.btn-outline{text-align:center;width:100%;}
+}
   </style>
 </head>
 <body>
